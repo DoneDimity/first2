@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First GitHub Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            transition: background-color 0.3s ease;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #message {
+            font-size: 22px;
+            margin-top: 20px;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My GitHub Page 🚀</h1>
+
+    <button onclick="changeText()">Click Me</button>
+    <button onclick="changeColor()">Change Background</button>
+
+    <div id="message">Nothing happened yet...</div>
+
+    <script>
+        function changeText() {
+            document.getElementById("message").innerText = "You clicked the button! 🎉";
+        }
+
+        function changeColor() {
+            const colors = ["lightblue", "lightgreen", "lightcoral", "lightyellow", "lavender"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+
+</body>
+</html>
